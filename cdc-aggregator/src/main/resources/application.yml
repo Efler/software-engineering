@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cdc-aggregator
+  datasource:
+    url: ${CDC_AGGREGATOR_DB_URL:jdbc:postgresql://localhost:5432/database}
+    username: ${CDC_AGGREGATOR_DB_USERNAME:admin}
+    password: ${CDC_AGGREGATOR_DB_PASSWORD:password}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: false
+
+server:
+  port: 8888
