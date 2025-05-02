@@ -7,7 +7,11 @@ spring:
     password: ${CDC_AGGREGATOR_DB_PASSWORD:password}
     driver-class-name: org.postgresql.Driver
   liquibase:
-    enabled: false
+    enabled: true
 
 server:
   port: 8888
+
+app:
+  file-listener:
+    filepath: "cdc-aggregator/file-listener-log.txt"

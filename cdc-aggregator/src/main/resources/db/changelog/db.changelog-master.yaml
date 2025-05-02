@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: sql/V1_0_0__my_table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: sql/V1_1_0__change_log.sql
+      relativeToChangelogFile: true
+  - include:
+      file: sql/V1_2_0__triggers.sql
+      relativeToChangelogFile: true
